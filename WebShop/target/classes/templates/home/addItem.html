@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Web Shop</title>
+    <link href="../../static/MyCSS.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<!--@Author Kasper N. Jensen-->
+<!-- Menu Bar -->
+<div class="menubar">
+    <a class="unactive" href="/">Home</a>
+    <a class="unactive" href="/showAllItems">Items</a>
+</div>
+
+<form class="" action="/addItem" method="post">
+    <div>
+        <label class="label-text">Name of Product</label>
+        <br>
+        <input class="labelcss" type="text" name="name" placeholder="I.e. Brun Marroc"> <span style="color: red">*</span>
+        <br><br>
+
+        <label class="label-text">Price of Product in DKK;-</label>
+        <br>
+        <input class="labelcss" type="text" name="price" placeholder="I.e. 100"> <span style="color: red">*</span>
+        <br><br>
+
+        <input type="submit" value="addItem">
+
+    </div>
+</form>
+
+</body>
+</html>

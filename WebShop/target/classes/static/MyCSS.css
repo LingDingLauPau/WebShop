@@ -1,0 +1,140 @@
+/*
+This CSS-section is for all the overall CSS like h1 or p etc...
+ */
+.h1 {
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 1px;
+}
+
+
+/*
+Front page Background image
+ */
+.index-background {
+    background-image: url(https://media.wired.com/photos/5a5547032b3a7778f5ca06cb/125:94/w_1593,h_1198,c_limit/Doggo-FeatureArt2-104685145.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*
+CSS for the Front page title text
+ */
+div.startpage{
+    font-size: 3rem;
+    text-align: center;
+    height:90vh;
+    line-height: 35vh;
+    color: white;
+    font-family: sans-serif, cursive;
+    font-weight: 700;
+    text-shadow:
+            3px 3px 30px #333, /* Shadow faded */
+            2px 2px #4ed1ff,
+            3px 3px #05afe7,
+            4px 4px #008cba,
+            5px 5px #43bb9f,
+            6px 6px #008cba,
+            7px 7px #022c3d,
+            8px 8px 5px #ff911b /* Orange blend with the back ground */
+}
+
+/*
+These are CSS for the top navigation menu
+ */
+.menubar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menubar a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.menubar a.unactive {
+    font-family: sans-serif;
+    background-color: #333;
+    color: #ffffff;
+}
+
+.menubar a.active {
+    font-family: sans-serif;
+    background-color: #0475aa;
+    color: #ffffff;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+These are CSS for the tables
+ */
+#tablecss {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tablecss td, #indexpagecss th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#tablecss tr:nth-child(even){background-color: #f2f2f2}
+
+#tablecss tr:hover {background-color: #ddd}
+
+#tablecss th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #008cba;
+    color: #ffffff;
+}
+
+
+/*
+CSS for the Create new buttons
+ */
+.button1 {
+    background-color: #008cba;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button-anc {
+    background-color: white;
+    color: black;
+    border: 1px solid #008cba;
+}
+
+.button-anc:hover {
+    background-color: #008cba;
+    color: white;
+}
+
+/*
+Write the next group description here -->>>
+ */
+
+
+
+
+

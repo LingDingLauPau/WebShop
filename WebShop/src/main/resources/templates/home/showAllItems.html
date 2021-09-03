@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Web Shop Item List</title>
+    <link href="../../static/MyCSS.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<!--@Author Kasper N. Jensen-->
+<!-- Menu Bar -->
+<div class="menubar">
+    <a class="unactive" href="/">Home</a>
+    <a class="active" href="/showAllItems">Items</a>
+</div>
+
+<!--@Author Kasper N. Jensen-->
+<!-- Title on start page -->
+<h1 class="h1">Items List</h1>
+
+<a href="/addItem">
+  <button class="button1 button-anc">Add new Item</button>
+</a>
+
+<table id="tablecss">
+  <thead>
+  <tr>
+
+    <th>ID</th>
+    <th>Product Name</th>
+    <th>Price</th>
+
+  </tr>
+  </thead>
+  <tbody>
+
+  <!-- Display all car information-->
+  <tr th:each="items:${itemsList}">
+    <td th:text="${items.id}"/>
+    <td th:text="${items.name}"/>
+    <td th:text="${items.price}"/>
+
+      <td>
+
+          <a th:href="@{'/updateItem/'+${items.id}}">
+              <button class="btn-update" id="btn-update" title="Edit Item"><img src="../edit.png" alt="Edit Item" width="25px" height="25px"></button>
+          </a>
+
+          <a th:href="@{'/deleteItem/'+${items.id}}">
+              <button class="btn-delete" id="btn-delete" title="Delete Item"><img src="../delete.png" alt="Delete Item" width="25px" height="25px"></button>
+          </a>
+
+      </td>
+
+  </tr>
+  </tbody>
+</table>
+
+
+
+</body>
+</html>

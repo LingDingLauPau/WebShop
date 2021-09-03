@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Web Shop</title>
+    <link href="../../static/MyCSS.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<!--@Author Kasper N. Jensen-->
+<!-- Menu Bar -->
+<div class="menubar">
+    <a class="unactive" href="/">Home</a>
+    <a class="unactive" href="/showAllItems">Items</a>
+</div>
+
+<form class="" th:href="@{'/updateItem/'+${items.id}}" method="post">
+    <div>
+
+        <br>
+        <label class="label-text">Product Name</label>
+        <br>
+        <input class="labelcss" type="text" name="name" th:value="${items.name}"> <span style="color: red">*</span>
+        <br><br>
+
+        <label class="label-text">Price</label>
+        <br>
+        <input class="labelcss" type="text" name="price" th:value="${items.price}"> <span style="color: red">*</span>
+        <br><br>
+
+        <pre style="font-size: 14px; font-family: Arial, sans-serif">               ALL FIELDS WITH <i style="color: red; font-size: 24px">*</i> MUST BE FILLED</pre>
+        <input style="margin-left: 6%" class="button1 button-anc" type="submit" value="Update Item">
+        <br>
+    </div>
+</form>
+
+</body>
+</html>
